@@ -35,6 +35,7 @@
                     <br>
                                         
                     <div>
+                        <input type="date" id="fecha" class="form-group" name="fechalta" value="fecha()" th:value="${fechalta}">
                         <script>
                             function fecha(){ 
                             var fecha = new Date();
@@ -42,12 +43,10 @@
                             var month = date.getMonth() + 1;
                             var day = date.getDate();
                             document.getElementById('fecha').innerHTML = month + "/" + day + "/" + year;
-                            console.log(fecha);
+                           
                         }
-                            console.log(fecha);
-                        </script>
-                        <input type="date" id="fecha" class="form-group" name="fechalta" value="fecha()" th:value="${fechalta}">
-                   <div></div>
+                       </script>
+                   </div>
                    <br>
 
                     <button type="submit" class="btn btn-primary"> Guardar </button>
